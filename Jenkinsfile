@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("Devops-test", "/Users/syedali/.jenkins/workspace/Devops-test")
+        app = docker.build(".", "jenkins-to-docker:1")
     }
 
     stage('Test image') {
